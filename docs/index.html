@@ -1,354 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>David Neal Jr. Website</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">David Neal Jr.</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile2.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        David
-                        <span class="text-primary">Neal Jr.</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        (614) 975-2190 ·
-                        <a href="mailto:davidnealjr777@email.com">davidnealjr777@email.com</a>
-                    </div>
-                    <p class="lead mb-5">I am an aspiring Software Developer pursuing my Bachelors of Science at The Ohio State University. I am focused on developing fun, engaging, and interactive experiences. 
-                        I come from a background in STEM education and am equipped with an Associates Degree in Computer Science, experience in Game Design, Esports Broadcasting, and Esports Team Management.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/david-neal-jr/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/dguy1470" target="_blank"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://x.com/Divad_777" target="_blank"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">         
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Collegiate League of Legends Team Manager</h3>
-                            <div class="subheading mb-3">The Ohio State University</div>
-                            <p>Managing Team Operations, Player Schedules, Scrim Schedules, Travel, and Match Times. Organizing Team meetings, VOD Review, and Game analysis</p>
-                            <div class="d-flex flex-wrap gap-3 mt-2">
-                                <img src="assets/img/OSU_Esports_squad.JPG" alt="Zelda Clone Screenshot 1" class="img-thumbnail" style="width: 350px;">
-                            </div>
-                            <p>Ohio State Esports at the Ohio Esports Collegiate Classic</p>
-                        </div>   
-                        <div class="flex-shrink-0"><span class="text-primary">June 2025 - Present</span></div>
-                    </div>  
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>David Neal Jr. | Game developer, esports caster and team manager</title>
+<meta name="description" content="David Neal Jr. is a computer science student at The Ohio State University who builds games and game tools, and casts and manages collegiate League of Legends.">
+<meta name="author" content="David Neal Jr.">
+<meta property="og:title" content="David Neal Jr.">
+<meta property="og:description" content="Games, game tools, and collegiate esports at Ohio State.">
+<meta property="og:image" content="assets/img/divad_dark_laugh.PNG">
+<link rel="icon" href="assets/img/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Archivo:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E8EAED;      /* Ohio State gray, lightened */
+    --panel: #FFFFFF;
+    --ink: #1B2130;
+    --steel: #5A6474;
+    --scarlet: #BA0C2F;
+    --scarlet-dark: #8E0A24;
+    --gold: #C79A2B;
+    --line: #C9CED6;
+    --display: "Big Shoulders Display", "Arial Narrow", "Helvetica Neue Condensed", Impact, sans-serif;
+    --body: "Archivo", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --wrap: 1180px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 var(--body); -webkit-font-smoothing: antialiased; }
+  img, video, iframe { display: block; max-width: 100%; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .wrap { width: min(var(--wrap), 100% - 40px); margin-inline: auto; }
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">                    
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Workshop Lead - Esports Camp Staff</h3>
-                            <div class="subheading mb-3">The Ohio State University</div>
-                                <p>Creating Lesson Plans and Leading Workshops focused on League Gameplay and Design Concepts. Teaching Esports Fundamentals, Gaming, and PC Tech Concepts to Youth</p>
-                            </div>
-                        <div class="flex-shrink-0"><span class="text-primary">April 2025 - July 2025</span></div>
-                    </div>
+  /* Top bar */
+  .bar { position: sticky; top: 0; z-index: 10; background: var(--ink); color: #fff; }
+  .bar .wrap { display: flex; align-items: center; gap: 28px; height: 60px; }
+  .bar .mark { font: 800 26px/1 var(--display); text-decoration: none; letter-spacing: .01em; }
+  .bar .mark span { color: #ff5a73; }
+  .bar nav { display: flex; gap: 22px; margin-left: auto; }
+  .bar nav a { text-decoration: none; font-weight: 500; font-size: 15px; color: #D6DAE1; }
+  .bar nav a:hover { color: #fff; }
+  .bar .resume { background: var(--scarlet); color: #fff; text-decoration: none; font-weight: 700; font-size: 15px; padding: 8px 14px; }
+  .bar .resume:hover { background: #d0123a; }
+  @media (max-width: 760px) { .bar nav { display: none; } .bar .resume { margin-left: auto; } }
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Esports Arena Operations Staff</h3>
-                            <div class="subheading mb-3">The Ohio State University</div>
-                            <p>Broadcasting for OSU’s collegiate Esports Teams as well as the Big Esports Conference, and EASU. Assisting in running Arena tournaments, Community events, and Arena floor</p>
-                            <div class="d-flex flex-wrap gap-3 mt-2">
-                                <img src="assets/img/divad_dark_laugh.PNG" alt="Zelda Clone Screenshot 1" class="img-thumbnail" style="width: 350px;">
-                            </div>
-                            <p>Sharing a laugh with my Co-Caster on the broadcast</p>
-                        </div>
-                    <div class="flex-shrink-0"><span class="text-primary">August 2024 - Present</span></div>
-                    </div>
+  /* Broadcast lower-third: the site's signature device */
+  .lower-third { display: flex; align-items: stretch; width: fit-content; max-width: 100%; font-family: var(--display); }
+  .hero .wrap > *, .project > *, .esports-grid > *, .two > * { min-width: 0; }
+  .lower-third .tag { white-space: nowrap; background: var(--scarlet); color: #fff; font-weight: 800; font-size: 20px; padding: 6px 14px; display: flex; align-items: center; }
+  .lower-third .tag.gold { background: var(--gold); color: var(--ink); }
+  .lower-third .name { background: var(--panel); color: var(--ink); font-weight: 600; font-size: 20px; padding: 6px 14px; display: flex; align-items: center; }
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">STEM Assistant Area Director</h3>
-                            <div class="subheading mb-3">Simon Kenton Council</div>
-                            <p>Taught Concepts of Game Design, Development, and Programming to youth. Led Game Design Workshops hosting Professionals in Game Dev industry</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2024 - July 2024</span></div>
-                    </div>
+  /* Hero */
+  .hero { padding: 64px 0 72px; }
+  .hero .wrap { display: grid; grid-template-columns: 5fr 7fr; gap: 56px; align-items: center; }
+  .hero h1 { font: 900 clamp(64px, 10vw, 128px)/.86 var(--display); margin: 0 0 24px; letter-spacing: -.01em; text-transform: none; }
+  .hero h1 .jr { color: var(--scarlet); }
+  .hero .lede { font-size: 20px; line-height: 1.5; max-width: 30ch; margin: 0 0 14px; }
+  .hero .sub { color: var(--steel); margin: 0 0 28px; max-width: 40ch; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 700; font-size: 15px; padding: 10px 16px; border: 2px solid var(--ink); background: transparent; color: var(--ink); }
+  .btn:hover { background: var(--ink); color: #fff; }
+  .btn.primary { background: var(--scarlet); border-color: var(--scarlet); color: #fff; }
+  .btn.primary:hover { background: var(--scarlet-dark); border-color: var(--scarlet-dark); }
+  .btn svg { width: 18px; height: 18px; fill: currentColor; }
+  .feature .screen { background: #000; aspect-ratio: 16 / 9; box-shadow: 14px 14px 0 var(--ink); }
+  .feature .screen iframe { width: 100%; height: 100%; border: 0; }
+  .feature .lower-third { margin: -22px 0 0 18px; position: relative; }
+  .feature p { margin: 30px 0 0; color: var(--steel); max-width: 60ch; }
+  @media (max-width: 600px) { .lower-third .tag, .lower-third .name { font-size: 17px; padding: 5px 10px; } }
+  @media (max-width: 900px) {
+    .hero .wrap { grid-template-columns: 1fr; gap: 44px; }
+    .feature .screen { box-shadow: 8px 8px 0 var(--ink); }
+  }
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Sports and Games Assistant Area Director</h3>
-                            <div class="subheading mb-3">Simon Kenton Council</div>
-                            <p>Taught Concepts of Game Design, Development, and Programming to youth. Led Game Design Workshops hosting Professionals in Game Dev industry</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2023 - May 2024</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Camp Staff</h3>
-                            <div class="subheading mb-3">Simon Kenton Council</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2022 - June 2023</span></div>
-                    </div>
+  /* Sections */
+  section.block { padding: 72px 0; border-top: 1px solid var(--line); }
+  section.block.dark { background: var(--ink); color: #fff; border-top: 0; }
+  .head { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 40px; }
+  .head h2 { font: 800 clamp(44px, 6vw, 72px)/.95 var(--display); margin: 0; }
+  .head p { margin: 0; color: var(--steel); max-width: 52ch; }
+  .dark .head p { color: #AEB6C3; }
 
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">More Media</h3>
-                        <div class="subheading mb-3">Broadcasting</div>
-                        <p>Play by Play casting at the Ohio Esports Collegiate Classic</p>
-                        <div class="ratio ratio-16x9 mb-4">
-                            <div class="ratio ratio-16x9">
-                                <iframe
-                                    src="https://drive.google.com/file/d/1oB04PR84aaim96t6uByXdpxfmNFbAuNJ/preview"
-                                    width="640"
-                                    height="480"
-                                    allow="autoplay"
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
-                        </div>                            
-                    </div>
+  /* Projects */
+  .project { display: grid; grid-template-columns: 7fr 5fr; gap: 48px; align-items: start; padding: 40px 0; }
+  .project + .project { border-top: 1px solid var(--line); }
+  .project h3 { font: 800 40px/1 var(--display); margin: 0 0 8px; }
+  .project .when { color: var(--steel); font-size: 15px; margin: 0 0 14px; }
+  .project p { margin: 0 0 14px; max-width: 58ch; }
+  .project ul:not(.stack) { margin: 0 0 16px; padding-left: 20px; max-width: 58ch; }
+  .project li { margin-bottom: 6px; }
+  ul.stack { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 18px; padding: 0; list-style: none; }
+  .stack li { margin: 0; font-size: 14px; font-weight: 500; padding: 3px 10px; background: var(--panel); border: 1px solid var(--line); }
+  .project .award { margin-bottom: 16px; }
+  .textlinks { display: flex; gap: 18px; flex-wrap: wrap; font-weight: 700; }
+  .textlinks a { color: var(--scarlet); text-underline-offset: 3px; }
+  @media (max-width: 900px) { .project { grid-template-columns: 1fr; gap: 24px; } }
 
-                    <!--
-                    <div class="mt-4">
-                    <figure class="text-center mb-4">
-                        <img src="assets/img/divad_dark_laugh.PNG" alt="Broadcast Picture" class="img-fluid rounded shadow mb-2" style="max-width: 600px;">
-                        <figcaption>Sharing a laugh with my Co-Caster</figcaption>
-                    </figure>
+  /* Gallery */
+  .gallery .stage { background: #000; aspect-ratio: 16 / 9; display: grid; place-items: center; overflow: hidden; }
+  .gallery .stage img, .gallery .stage video, .gallery .stage iframe { width: 100%; height: 100%; object-fit: contain; border: 0; }
+  .gallery .thumbs { display: flex; gap: 8px; margin-top: 8px; overflow-x: auto; padding-bottom: 4px; }
+  .gallery .thumbs button { flex: 0 0 auto; width: 104px; aspect-ratio: 16 / 10; padding: 0; border: 3px solid transparent; background: #000; cursor: pointer; position: relative; }
+  .gallery .thumbs button img { width: 100%; height: 100%; object-fit: cover; opacity: .7; }
+  .gallery .thumbs button[aria-pressed="true"] { border-color: var(--scarlet); }
+  .gallery .thumbs button[aria-pressed="true"] img, .gallery .thumbs button:hover img { opacity: 1; }
+  .gallery .thumbs .play { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; font-size: 22px; text-shadow: 0 1px 4px #000; }
 
-                    <figure class="text-center mb-4">
-                        <img src="assets/img/OSU_Esports_squad.JPG" alt="OSU Esports Picture" class="img-fluid rounded shadow mb-2" style="max-width: 600px;">
-                        <figcaption>Ohio State Esports at the Ohio Esports Collegiate Classic</figcaption>
-                    </figure>
-                    </div>  
-                    -->
-                    
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">The Ohio State university</h3>
-                            <div class="subheading mb-3">Bachelor of Computer and Information Science</div>
-                            <p>Computer Science (Game Design Track) - Minor in Animation</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2023 - Dec 2026</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Columbus State Community College</h3>
-                            <div class="subheading mb-3">Associate of Computer and Information Science</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2021 - May 2023</span></div>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Groveport Madison High School</h3>
+  /* More projects */
+  .more { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--line); border: 2px solid var(--line); margin-top: 32px; }
+  .more article { background: var(--paper); padding: 26px 24px; }
+  .more h4 { font: 800 28px/1.05 var(--display); margin: 0 0 6px; }
+  .more .when { color: var(--steel); font-size: 14px; margin: 0 0 10px; }
+  .more p { margin: 0 0 12px; font-size: 16px; }
+  .more .stack { margin: 0; }
+  @media (max-width: 900px) { .more { grid-template-columns: 1fr; } }
 
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2017 - May 2021</span></div>
-                    </div>
-                </div>
-            </section>
+  /* Esports */
+  .esports-grid { display: grid; grid-template-columns: 7fr 5fr; gap: 48px; align-items: start; }
+  .esports-grid .tile { position: relative; }
+  .esports-grid .tile + .tile { margin-top: 52px; }
+  .esports-grid .tile .lower-third { position: absolute; left: 16px; bottom: -16px; }
+  .esports-grid .tile img, .esports-grid .tile iframe { width: 100%; }
+  .esports-grid .tile iframe { aspect-ratio: 16 / 9; border: 0; background: #000; }
+  .roles { list-style: none; margin: 0; padding: 0; }
+  .roles li { padding: 0 0 22px; margin: 0 0 22px; border-bottom: 1px solid #333B4D; }
+  .roles li:last-child { border-bottom: 0; }
+  .roles h3 { font: 800 30px/1.05 var(--display); margin: 0 0 4px; }
+  .roles .when { color: #AEB6C3; font-size: 15px; margin: 0 0 8px; }
+  .roles p { margin: 0; color: #DDE1E7; }
+  .strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 48px; }
+  .strip img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+  @media (max-width: 900px) { .esports-grid { grid-template-columns: 1fr; } .strip { grid-template-columns: 1fr 1fr; } }
 
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"> <img src="assets/img/c-sharp-logo.png" alt="C#" style="height: 50px;"></li>
-                        <li class="list-inline-item"> <img src="assets/img/java-logo.png" alt="Java" style="height: 50px;"></li>
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-unity"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+  /* Experience + about */
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+  .timeline { list-style: none; margin: 0; padding: 0; }
+  .timeline li { display: grid; grid-template-columns: 150px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .timeline .when { color: var(--steel); font-size: 15px; padding-top: 3px; }
+  .timeline strong { display: block; font-size: 17px; }
+  .timeline span.org { color: var(--steel); }
+  h3.sub { font: 800 32px/1 var(--display); margin: 0 0 12px; }
+  .about p { margin: 0 0 16px; max-width: 60ch; }
+  .facts { list-style: none; padding: 0; margin: 24px 0 0; }
+  .facts li { padding: 10px 0; border-top: 1px solid var(--line); }
+  @media (max-width: 900px) { .two { grid-template-columns: 1fr; } .timeline li { grid-template-columns: 1fr; gap: 2px; } }
 
-                    </ul>
-                    <div class="subheading mb-3">Recent Projects</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            In Progress - Full Stack Riot API Vision Coach
-                              <!-- Media section -->
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Riot Games API Match Checker
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            C# Group Game Dev Project
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Unity Cabin Game Development
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Java Development RSS 
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            
-            <hr class="m-0" />
-            <!--Projects-->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
+  footer { background: var(--scarlet); color: #fff; padding: 56px 0; }
+  footer .wrap { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; }
+  footer h2 { font: 900 clamp(44px, 7vw, 84px)/.9 var(--display); margin: 0; }
+  footer .links .btn { border-color: #fff; color: #fff; }
+  footer .links .btn:hover { background: #fff; color: var(--scarlet); }
+  footer small { display: block; margin-top: 28px; opacity: .8; width: 100%; }
+</style>
+</head>
+<body>
 
-                    <!-- PROJECT 1 -->
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Full Stack Riot API Vision Coach</h3>
-                        <div class="subheading mb-3">Full Stack Development • Python • JavaScript • HTML • Riot Games API</div>
-                        <p>(In-Progress) Full Stack project utilizing Riot API that allows users to search summoner name, and pull match data from that summoners recent matches, and gives 
-                            feedback based on the details of their recent matches. Focused on helping improve vision score and proper warding practices. (Current Progress below)</p>
-                        <p>Currently, the "Vision Breakdown" only gives the basic run down of how vision works in league of legends, I am working on the app giving the user dynamic feedback based on the data of the matches
-                            (ex. Low win rate and Low vision Score = tell the user how to reclaim vision when they've lost most of the map)
-                        </p>
-                        <div class="ratio ratio-16x9 mb-4">
-                        <video controls>
-                            <source src="assets/videos/VisionCoachVid.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        </div>
-                    </div>
-                    <div class="flex-shrink-0">
-                        <span class="text-primary">In Progress</span>
-                    </div>
-                    </div>
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="#top">David Neal <span>Jr.</span></a>
+    <nav aria-label="Sections">
+      <a href="#projects">Projects</a>
+      <a href="#esports">Esports</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="resume" href="assets/David_Neal_Jr_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+  </div>
+</header>
 
-                    <!-- PROJECT 2 -->
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">C# MonoGame Group Game Dev Project</h3>
-                        <div class="subheading mb-3">C# • Team Game Development • Repositories and Version Control </div>
-                        <p>A recreation of the classic Legend of Zelda in MonoGame for my portfolio. Includes state management, item systems, enemies, and a custom controller framework. Developed in a team setting, a Zelda inspired Game using MonoGame. Implemented object-oriented principles for items, enemies, and player mechanics.</p>
-
-                        <div class="d-flex flex-wrap gap-3 mt-2">
-                        <img src="assets/img/ZeldaMonoGameSS_1.jpg" alt="Zelda Clone Screenshot 1" class="img-thumbnail" style="width: 300px;">
-                        <img src="assets/img/ZeldaMonoGameSS_2.jpg" alt="Zelda Clone Screenshot 2" class="img-thumbnail" style="width: 300px;">
-                        <img src="assets/img/ZeldaMonoGameSS_3.jpg" alt="Zelda Clone Screenshot 2" class="img-thumbnail" style="width: 300px;">
-                        </div>
-                    </div>
-                    <div class="flex-shrink-0">
-                        <span class="text-primary">Jan 2025 - Apr 2025</span>
-                    </div>
-                    </div>
-
-                    <!-- PROJECT 3 -->
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Unity Cabin Game Development</h3>
-                        <div class="subheading mb-3">Unity • C# • 3D Rendering • Game Development • Game Design</div>
-                        <p>Building a game in unity within a 3 day time frame, incorporating physics, enemy AI, and user interaction.</p>
-                        <p>The player will have to manage their sanity, sticking as close to the Cabin and its light as they can before the 
-                            creature comes near, forcing you to need to flee into the night. Throughout the map are little capsules that can 
-                            increase sanity and battery. While you are forced to be away from the cabin you must manage your flashlight battery 
-                            and try to find as many capsules as you can while you wait for the creature to leave</p>
-                        <div class="d-flex flex-wrap gap-3 mt-2">
-                        <img src="assets/img/cabinGame1.jpg" alt="Cabin Game Start" class="img-thumbnail" style="width: 300px;">
-                        <img src="assets/img/cabinGame2.jpg" alt="The Cabin" class="img-thumbnail" style="width: 300px;">
-                        <img src="assets/img/cabinGame3.jpg" alt="Need Light" class="img-thumbnail" style="width: 300px;">
-                        </div>
-                    </div>
-                    <div class="flex-shrink-0">
-                        <span class="text-primary">Nov 2024 - Dec 2024</span>
-                    </div>
-                </div>
-
-            </div>
-            </section>
-
-
-
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a software developer, I enjoy playing video games such as League of Legends and Pokemon. I also cast collegiate League of Legends and play competitive Pokemon VGC. When I am not competing or Casting, I like to spend time drawing and animating, and in the summers I like to go camping, hiking and kayaking.</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Leadership and Awards</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            President - OSU Aniamtion Club
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Social Outreach and Community Managment Board - Buckeye Gaming Collective
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-
-                            Vice President - CSCC STEM Club
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-
-                            2x Future Scientists of Ohio Scholar
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Eagle Scout 2 Palms - Simon Kenton Council
-                        </li>
-
-
-                    </ul>
-                </div>
-            </section>
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>David<br>Neal <span class="jr">Jr.</span></h1>
+        <p class="lede">I build games and the tools that make them, and I cast and manage collegiate League of Legends at Ohio State.</p>
+        <p class="sub">Computer and Information Science at The Ohio State University, minor in Animation. Graduating May 2027.</p>
+        <div class="links">
+          <a class="btn primary" href="assets/David_Neal_Jr_Resume.pdf" target="_blank" rel="noopener">View resume</a>
+          <a class="btn" href="https://github.com/dguy1470" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/david-neal-jr/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>LinkedIn</a>
+          <a class="btn" href="mailto:davidnealjr777@gmail.com">Email me</a>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+      </div>
+
+      <div class="feature">
+        <div class="screen">
+          <iframe src="https://www.youtube-nocookie.com/embed/0tDqeJNzCjY" title="Empowered Recall demo video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+        </div>
+        <div class="lower-third"><span class="tag gold">1st place</span><span class="name">Empowered Recall, Riot Games Hackathon 2026</span></div>
+        <p>Pause a live Unity playtest, click any object, and tell an AI agent what to change. The edit lands live, and a second agent checks it against the game's rules.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="projects">
+    <div class="wrap">
+      <div class="head">
+        <h2>Projects</h2>
+        <p>Games, game tools, and the systems behind them. Click the thumbnails to see more of each one.</p>
+      </div>
+
+      <article class="project">
+        <div class="gallery">
+          <div class="stage"></div>
+          <div class="thumbs" role="group" aria-label="Empowered Recall media">
+            <button type="button" data-type="youtube" data-src="0tDqeJNzCjY" data-thumb="https://i.ytimg.com/vi/0tDqeJNzCjY/hqdefault.jpg" data-alt="Empowered Recall demo video"></button>
+          </div>
+        </div>
+        <div>
+          <div class="lower-third award"><span class="tag gold">1st place</span><span class="name">Agentic Development track</span></div>
+          <h3>Empowered Recall</h3>
+          <p class="when">Riot Games Hackathon at DevHack, Nov 2026. Team of 3.</p>
+          <ul class="stack"><li>Unity</li><li>C#</li><li>AI agents</li><li>MCP</li><li>Hot Reload</li></ul>
+          <p>A tool for trying game design ideas in seconds instead of days. Freeze a playtest, select the objects the agent may touch, and describe the change. The agent patches the game live without a recompile or restart.</p>
+          <ul>
+            <li>A second, sandboxed agent runs regression tests on every edit, such as making sure players can't damage allies.</li>
+            <li>Every change is saved as a snapshot, so any edit can be undone in one click.</li>
+          </ul>
+          <div class="textlinks">
+            <a href="https://devpost.com/software/empowered-recall" target="_blank" rel="noopener">Devpost</a>
+            <a href="https://github.com/JonahSagers/3StackNightmare" target="_blank" rel="noopener">Source code</a>
+            <a href="https://youtu.be/0tDqeJNzCjY" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="gallery">
+          <div class="stage"></div>
+          <div class="thumbs" role="group" aria-label="Riot API Vision Coach media">
+            <button type="button" data-type="video" data-src="assets/videos/VisionCoachVid.mp4" data-thumb="assets/img/VisionCoachScreenShot.jpg" data-alt="Vision Coach walkthrough video"></button>
+            <button type="button" data-type="img" data-src="assets/img/VisionCoachScreenShot.jpg" data-alt="Vision Coach summoner stats page"></button>
+            <button type="button" data-type="img" data-src="assets/img/VisionCoachScreenShot_2.jpg" data-alt="Vision Coach vision breakdown"></button>
+          </div>
+        </div>
+        <div>
+          <h3>Riot API Vision Coach</h3>
+          <p class="when">Personal project, in progress.</p>
+          <ul class="stack"><li>Python</li><li>JavaScript</li><li>HTML</li><li>Riot Games API</li></ul>
+          <p>Search a summoner name and the app pulls your recent League of Legends matches, then gives feedback on vision score and warding so you know what to fix next game.</p>
+          <p>Next up: a data-driven vision breakdown that compares you against players at your rank.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="gallery">
+          <div class="stage"></div>
+          <div class="thumbs" role="group" aria-label="Zelda-inspired MonoGame screenshots">
+            <button type="button" data-type="img" data-src="assets/img/ZeldaMonoGameSS_2.jpg" data-alt="Player fighting enemies in a dungeon room"></button>
+            <button type="button" data-type="img" data-src="assets/img/ZeldaMonoGameSS_1.jpg" data-alt="Dungeon room with items"></button>
+            <button type="button" data-type="img" data-src="assets/img/ZeldaMonoGameSS_3.jpg" data-alt="Another dungeon room"></button>
+          </div>
+        </div>
+        <div>
+          <h3>Zelda-inspired dungeon game</h3>
+          <p class="when">Course project, Jan to Apr 2025. Team project.</p>
+          <ul class="stack"><li>C#</li><li>MonoGame</li><li>OOP</li></ul>
+          <p>A recreation of a classic Zelda dungeon built from scratch in MonoGame, with game states, an item system, enemies, and a custom controller framework, all organized around object-oriented design.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="gallery">
+          <div class="stage"></div>
+          <div class="thumbs" role="group" aria-label="Cabin horror game screenshots">
+            <button type="button" data-type="img" data-src="assets/img/cabinGame1.jpg" data-alt="Dark forest at night"></button>
+            <button type="button" data-type="img" data-src="assets/img/cabinGame2.jpg" data-alt="Cabin game screenshot"></button>
+            <button type="button" data-type="img" data-src="assets/img/cabinGame3.jpg" data-alt="Cabin game screenshot"></button>
+            <button type="button" data-type="img" data-src="assets/img/cabingame4.jpg" data-alt="Cabin game screenshot"></button>
+            <button type="button" data-type="img" data-src="assets/img/cabinGame5.jpg" data-alt="Cabin game screenshot"></button>
+          </div>
+        </div>
+        <div>
+          <h3>Cabin</h3>
+          <p class="when">Unity game jam, Nov to Dec 2024. Built in 3 days.</p>
+          <ul class="stack"><li>Unity</li><li>C#</li><li>Enemy AI</li></ul>
+          <p>A first-person horror game. Keep your sanity up and your flashlight charged while a creature hunts you through the woods, and collect pickups to survive the night.</p>
+        </div>
+      </article>
+
+      <div class="more">
+        <article>
+          <h4>AEP Outage Concierge</h4>
+          <p class="when">Hack OHI/O, Oct 2026. Team of 4.</p>
+          <p>Simulates storm movement from GIS data to predict where power outages will hit, with an interactive map and email and desktop alerts.</p>
+          <ul class="stack"><li>Python</li><li>HTML</li><li>GIS</li></ul>
+        </article>
+        <article>
+          <h4>AES from scratch</h4>
+          <p class="when">Sept to Oct 2026</p>
+          <p>AES encryption and decryption written without crypto libraries, supporting 128, 192, and 256-bit keys plus Cipher Block Chaining mode.</p>
+          <ul class="stack"><li>Python</li><li>Cryptography</li></ul>
+        </article>
+        <article>
+          <h4>Trip expense splitter</h4>
+          <p class="when">Mar to Apr 2026. Team of 4.</p>
+          <p>A full-stack app for tracking shared trip costs, with a greedy algorithm that works out who pays whom with the fewest payments.</p>
+          <ul class="stack"><li>Ruby on Rails</li><li>SQL</li><li>MVC</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block dark" id="esports">
+    <div class="wrap">
+      <div class="head">
+        <h2>Esports</h2>
+        <p>On camera, behind the desk, and running the team. I've spent the last two years in Ohio State's esports program.</p>
+      </div>
+      <div class="esports-grid">
+        <div>
+          <div class="tile">
+            <iframe src="https://drive.google.com/file/d/1oB04PR84aaim96t6uByXdpxfmNFbAuNJ/preview" title="Play-by-play casting at the Ohio Esports Collegiate Classic" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <div class="lower-third"><span class="tag">Play-by-play</span><span class="name">Ohio Esports Collegiate Classic</span></div>
+          </div>
+          <div class="tile">
+            <img src="assets/img/OSU_Esports_squad.JPG" alt="Ohio State esports teams together on the football field" loading="lazy">
+            <div class="lower-third"><span class="tag">Team manager</span><span class="name">Ohio State League of Legends</span></div>
+          </div>
+        </div>
+        <ul class="roles">
+          <li>
+            <h3>League of Legends team manager</h3>
+            <p class="when">Ohio State Recreational Sports, Jun 2025 to present</p>
+            <p>I run team operations: schedules, travel, match times, meetings, and VOD review. I also track match and player data to predict seeding and spot trends.</p>
+          </li>
+          <li>
+            <h3>CLOL selection committee</h3>
+            <p class="when">2025 to present</p>
+            <p>Selected to evaluate collegiate teams and vote on tournament seeding and at-large bids.</p>
+          </li>
+          <li>
+            <h3>Caster and broadcast team</h3>
+            <p class="when">Aug 2024 to present</p>
+            <p>Play-by-play and color commentary for Ohio State teams, the Big Esports Conference, and EASU, plus community game nights and watch parties with Buckeye Gaming Collective.</p>
+          </li>
+          <li>
+            <h3>Esports camp workshop lead</h3>
+            <p class="when">Apr to Jul 2025</p>
+            <p>Planned and taught youth workshops on League gameplay, game design, esports fundamentals, and PC hardware.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="strip">
+        <img src="assets/img/divad_dark_laugh.PNG" alt="David on the Ohio State Esports broadcast desk with co-caster Darien" loading="lazy">
+        <img src="assets/img/IMG_9374.PNG" alt="David on the Ohio State Esports broadcast desk with co-caster Patrick" loading="lazy">
+        <img src="assets/img/IMG_9376.PNG" alt="David on the Ohio State Esports broadcast desk with co-caster Mask" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="experience">
+    <div class="wrap two">
+      <div>
+        <div class="head"><h2>Experience</h2></div>
+        <ul class="timeline">
+          <li><span class="when">Jun 2025 to now</span><div><strong>Premier Team Manager</strong><span class="org">Ohio State Recreational Sports</span></div></li>
+          <li><span class="when">Aug 2024 to Jun 2025</span><div><strong>Esports Arena Operations Staff</strong><span class="org">Ohio State Recreational Sports</span></div></li>
+          <li><span class="when">Apr to Jul 2025</span><div><strong>Esports Camp Workshop Lead</strong><span class="org">Ohio State Recreational Sports</span></div></li>
+          <li><span class="when">May 2022 to Jul 2024</span><div><strong>STEM and Sports &amp; Games Assistant Area Director</strong><span class="org">Simon Kenton Council</span></div></li>
+        </ul>
+        <h3 class="sub" style="margin-top:40px">Education</h3>
+        <ul class="timeline">
+          <li><span class="when">Graduating May 2027</span><div><strong>B.S. Computer and Information Science, minor in Animation</strong><span class="org">The Ohio State University</span></div></li>
+          <li><span class="when">May 2023</span><div><strong>A.S. Computer Information Science</strong><span class="org">Columbus State Community College</span></div></li>
+        </ul>
+      </div>
+      <div class="about" id="about">
+        <div class="head"><h2>About</h2></div>
+        <p>I got into computer science because I wanted to make the kind of games I grew up playing. Since then I've built games in Unity and MonoGame, made tools that use the Riot Games API, and spent a lot of weekends at the broadcast desk.</p>
+        <p>Outside of code, I compete in Pokémon VGC, draw and animate, and get outside to camp, hike, and kayak whenever I can.</p>
+        <ul class="facts">
+          <li><strong>Skills:</strong> C#, Python, Java, C, JavaScript, Ruby on Rails, Unity, MonoGame, REST APIs, SQL, Git</li>
+          <li><strong>Leadership:</strong> President, OSU Animation Club. Vice President, CSCC STEM Club. Buckeye Gaming Collective board.</li>
+          <li><strong>Awards:</strong> 1st place, Riot Games Hackathon 2026. Eagle Scout. 2x Dean's List. 2x Future Scientists of Ohio Scholar.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>Let's talk.</h2>
+    <div class="links">
+      <a class="btn" href="mailto:davidnealjr777@gmail.com">davidnealjr777@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/david-neal-jr/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/dguy1470" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://x.com/Divad_777" target="_blank" rel="noopener">X</a>
+    </div>
+    <small>© 2026 David Neal Jr.</small>
+  </div>
+</footer>
+
+<script>
+  // Project galleries: each thumbnail button swaps what's on the stage.
+  // To add media, add a <button> with data-type ("img", "video", or "youtube"),
+  // data-src (file path or YouTube id), optional data-thumb, and data-alt.
+  document.querySelectorAll('.gallery').forEach(function (gallery) {
+    var stage = gallery.querySelector('.stage');
+    var buttons = gallery.querySelectorAll('.thumbs button');
+
+    buttons.forEach(function (btn) {
+      var thumb = btn.dataset.thumb || btn.dataset.src;
+      var img = document.createElement('img');
+      img.src = thumb; img.alt = ''; img.loading = 'lazy';
+      btn.appendChild(img);
+      btn.setAttribute('aria-label', 'Show ' + (btn.dataset.alt || 'media'));
+      if (btn.dataset.type !== 'img') {
+        var play = document.createElement('span');
+        play.className = 'play'; play.setAttribute('aria-hidden', 'true'); play.textContent = '▶';
+        btn.appendChild(play);
+      }
+      btn.addEventListener('click', function () { show(btn); });
+    });
+
+    function show(btn) {
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
+      stage.innerHTML = '';
+      var el, type = btn.dataset.type;
+      if (type === 'youtube') {
+        el = document.createElement('iframe');
+        el.src = 'https://www.youtube-nocookie.com/embed/' + btn.dataset.src;
+        el.title = btn.dataset.alt || 'Video';
+        el.allow = 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+        el.allowFullscreen = true;
+        el.loading = 'lazy';
+      } else if (type === 'video') {
+        el = document.createElement('video');
+        el.src = btn.dataset.src; el.controls = true; el.preload = 'metadata';
+        el.poster = btn.dataset.thumb || '';
+        el.setAttribute('aria-label', btn.dataset.alt || 'Video');
+      } else {
+        el = document.createElement('img');
+        el.src = btn.dataset.src; el.alt = btn.dataset.alt || '';
+      }
+      stage.appendChild(el);
+    }
+
+    if (buttons.length) show(buttons[0]);
+    if (buttons.length < 2) gallery.querySelector('.thumbs').hidden = true;
+  });
+</script>
+</body>
 </html>
