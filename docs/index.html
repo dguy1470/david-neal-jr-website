@@ -104,6 +104,8 @@
   /* Gallery */
   .gallery .stage { background: #000; aspect-ratio: 16 / 9; display: grid; place-items: center; overflow: hidden; }
   .gallery .stage img, .gallery .stage video, .gallery .stage iframe { width: 100%; height: 100%; object-fit: contain; border: 0; }
+  .gallery .stage a { display: block; width: 100%; height: 100%; cursor: zoom-in; }
+  .gallery .hint { margin: 6px 0 0; font-size: 14px; color: var(--steel); }
   .gallery .thumbs { display: flex; gap: 8px; margin-top: 8px; overflow-x: auto; padding-bottom: 4px; }
   .gallery .thumbs button { flex: 0 0 auto; width: 104px; aspect-ratio: 16 / 10; padding: 0; border: 3px solid transparent; background: #000; cursor: pointer; position: relative; }
   .gallery .thumbs button img { width: 100%; height: 100%; object-fit: cover; opacity: .7; }
@@ -227,6 +229,33 @@
             <a href="https://github.com/JonahSagers/3StackNightmare" target="_blank" rel="noopener">Source code</a>
             <a href="https://youtu.be/0tDqeJNzCjY" target="_blank" rel="noopener">Watch on YouTube</a>
           </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="gallery">
+          <div class="stage"></div>
+          <div class="thumbs" role="group" aria-label="Unreal Engine squirrel adventure media">
+            <!-- Add the gameplay video here when it's ready, e.g.:
+            <button type="button" data-type="youtube" data-src="YOUTUBE_ID" data-alt="Gameplay video"></button> -->
+            <button type="button" data-type="img" data-src="assets/img/ue_lilypad.jpg" data-alt="The squirrel hero standing on a lily pad in a glowing forest pond"></button>
+            <button type="button" data-type="img" data-src="assets/img/ue_frog_dialogue.jpg" data-alt="Talking to a frog NPC, with the Press E to talk prompt and the dialogue box"></button>
+            <button type="button" data-type="img" data-src="assets/img/ue_bridge_night.jpg" data-alt="The squirrel crossing a wooden bridge at night"></button>
+            <button type="button" data-type="img" data-src="assets/img/ue_bp_dialogue_handling.png" data-alt="Blueprint graph for the character's dialogue handling"></button>
+            <button type="button" data-type="img" data-src="assets/img/ue_bp_talkable.png" data-alt="Blueprint graph for BP_Talkable, the NPC interaction system"></button>
+          </div>
+          <p class="hint">Click an image to open it full size, including the Blueprint graphs.</p>
+        </div>
+        <div>
+          <h3>Squirrel forest adventure</h3>
+          <p class="when">Unreal Engine group project.</p>
+          <ul class="stack"><li>Unreal Engine</li><li>Blueprints</li><li>UMG</li><li>Enhanced Input</li></ul>
+          <p>A storybook 3D adventure where you play a squirrel exploring a forest, talking to its frog residents, and unlocking new abilities as you help them. I built the game's dialogue, NPC interaction, and progression systems in Blueprints.</p>
+          <ul>
+            <li>A reusable dialogue system: each NPC passes in its own lines, a typewriter widget reveals the text, and an Enhanced Input action advances to the next line once typing finishes.</li>
+            <li>A talkable NPC Blueprint that shows a "Press E to talk" prompt when you're in range, plays the frog's voice at its location, and locks player movement during conversations.</li>
+            <li>Checkpoint progression: a Switch on Int over items delivered unlocks abilities like jumping, changes the player's movement state, and triggers cutscenes.</li>
+          </ul>
         </div>
       </article>
 
@@ -437,8 +466,12 @@
         el.poster = btn.dataset.thumb || '';
         el.setAttribute('aria-label', btn.dataset.alt || 'Video');
       } else {
-        el = document.createElement('img');
-        el.src = btn.dataset.src; el.alt = btn.dataset.alt || '';
+        var pic = document.createElement('img');
+        pic.src = btn.dataset.src; pic.alt = btn.dataset.alt || '';
+        el = document.createElement('a');
+        el.href = btn.dataset.src; el.target = '_blank'; el.rel = 'noopener';
+        el.title = 'Open full size';
+        el.appendChild(pic);
       }
       stage.appendChild(el);
     }
